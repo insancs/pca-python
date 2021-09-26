@@ -20,7 +20,7 @@ Principal Component Analysis, or PCA, is a dimensionality-reduction method that 
 We will use the Decision Tree model and calculate how accurate it is without using PCA.
 
 <p align="center">
-    <img src="images/pcaim.JPG" width="200">
+    <img src="images/acc.JPG" width="400">
 </p>
 
 Accuracy without PCA is 0.9 or 90%.
@@ -28,10 +28,14 @@ Accuracy without PCA is 0.9 or 90%.
 ## Model Performance with PCA
 
 We will use PCA and calculate the variance of each attribute. The results of the variance of each attribute are as follows.
-
 <p align="center">
-    <img src="images/pcaim.JPG" width="200">
+    <img src="images/pcaim.JPG" width="400">
 </p>
-
 The result is 1 attribute has a variance of 0.931, which means that the attribute stores high information and is much more significant than other attributes.
 Looking at the previous variances, we can take the best 2 principal components because the total variance when added up is 0.977 which is quite high.
+
+The results of the accuracy test after using PCA are as follows.
+<p align="center">
+    <img src="images/pcaimpl.JPG" width="400">
+</p>
+In the experiment above, we can see that with only 2 main components or 2 attributes, the model still has a fairly high accuracy, which is 80%. With principal components, you can reduce less significant attributes in predictions and speed up machine learning model training time.
