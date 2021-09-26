@@ -8,3 +8,4 @@ The stages in this exercise are as follows:
 3. Train the model with PCA.
 4. Evaluate the results of the two models.
 
+We will use the Decision Tree model and calculate how accurate it is without using PCA.
